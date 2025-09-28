@@ -1,0 +1,143 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for CV/Resume
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[12pt, letterpaper]{awesome-cv}
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-darknight}
+% Uncomment if you would like to specify your own color
+% \definecolor{awesome}{HTML}{3E6D9C}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+% \definecolor{sectiondivider}{HTML}{5D5D5D}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+%-------------------------------------------------
+%%%% Bibliography Settings.
+%-------------------------------------------------
+\usepackage[backend=biber,
+		style=authoryear,
+		citestyle=authoryear,
+		url=false,
+		maxbibnames=50,
+		firstinits=true,
+		dashed=false]{biblatex}
+\addbibresource[datatype=bibtex]{ASSETS/BIBLIOGRAPHY_ENTIRE.bib}
+
+%--------------------------
+% New ref sorting schema
+\AtEveryBibitem{%
+  \clearlist{language}%
+}
+%----------------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+% \photo[rectangle,edge,right]{./examples/profile}
+\name{Andrew S.}{Beck}
+\academicdegree{, PhD}
+\position{Virology{\enskip\cdotp\enskip}Public Health Genomics{\enskip\cdotp\enskip}Bioinformatics}
+\address{Atlanta GA USA}
+
+\mobile{(443) 865-5372}
+\email{andy@andrewbeck.io}
+%\dateofbirth{January 1st, 1970}
+\linkedin{www.linkedin.com/in/andrewbeckvirologist}
+\homepage{www.orcid.org/0000-0001-5307-5565}
+%\github{posquit0}
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \twitter{@twit}
+% \skype{skype-id}
+% \reddit{reddit-id}
+% \medium{madium-id}
+% \kaggle{kaggle-id}
+% \hackerrank{hackerrank-id}
+% \googlescholar{googlescholar-id}{name-to-display}
+%% \firstname and \lastname will be used
+% \googlescholar{googlescholar-id}{}
+ %\extrainfo{not sure}
+
+%\quote{``Be the change that you want to see in the world."}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal information
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader[C]
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {\today}
+  {Andrew S. Beck~~~·~~~CV}
+  {\thepage}
+
+
+%-------------------------------------------------------------------------------
+%	CV/RESUME CONTENT
+%	Each section is imported separately, open each file in turn to modify content
+%-------------------------------------------------------------------------------
+%\input{ASSETS/summary.tex}
+\input{ASSETS/experience.tex}
+\input{ASSETS/education.tex}
+\input{ASSETS/publications.tex} % Copy from Summary
+%\input{ASSETS/abstracts.tex} % Copy from Summary
+\input{ASSETS/chapters.tex} % Copy from Summary
+
+%\input{ASSETS/honors.tex}
+%\input{ASSETS/professional_memberships.tex} % Copy from Certificates
+%\input{ASSETS/peer_review.tex} % Copy from Certificates
+
+
+\input{ASSETS/service.tex} % Committees and Service, Copy from Education
+\input{ASSETS/grants.tex} % Grants and Support, Copy from Education
+%\input{ASSETS/teaching.tex} % Teaching, Copy from Education
+\input{ASSETS/skills.tex}
+
+%\input{ASSETS/certificates.tex}
+ %\input{resume/presentation.tex}
+ %\input{resume/writing.tex}
+% \input{resume/committees.tex}
+
+% \input{resume/extracurricular.tex}
+
+
+%-------------------------------------------------------------------------------
+\end{document}
