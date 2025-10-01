@@ -19,7 +19,7 @@ The full story, really - everything that's too cumbersome to put in a quick recr
 
 1. Get a TeX distribution. I like [MacTeX](https://www.tug.org/mactex/).
 2. Install Awesome-CV .cls as an external resource to your Tex distribution.
-3. Build with the Makefile.
+3. Build with the Makefile; it calls latexmk to deal with repeated compilation passes.
 4. The PDF will appear in the base directory.
 5. Otherwise, just clone what I've got here.
 
